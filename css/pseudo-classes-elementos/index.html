@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo's'</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1#titulo{
+            font-weight: bold;
+        }
+        
+        #titulo:hover{
+            color: red;
+            background-color: aqua;
+        }
+
+        h2:hover{
+            text-decoration: underline;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: blue;
+        }
+
+        div:hover{
+            color: red;
+        }
+        
+        a{
+            color: violet;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkviolet;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        a::after{
+            content: ' [link] ';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Pseudo-classes / Pseudo-elementos</h1>
+    <h2>Exemplo do "texto escondido"</h2>
+    <div>
+        Passe o mouse aqui!!!
+        <p>Opa, tudo bom?</p>
+    </div>
+    <p>Fim do exemplo.</p>
+    <h2>Exemplo dos links</h2>
+    <ul>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="https://www.netflix.com" target="_blank">Netflix</a></li>
+        <li><a href="https://www.leagueoflegends.com/pt-br/" target="_blank">League of Legends</a></li>
+    </ul>
+</body>
+</html>

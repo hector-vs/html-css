@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Links/Âncoras/Hyperlinks</h1>
+    <h2>Links Externos</h2>
+    <p>Você pode acessar meu <a href="https://github.com/hector-vs/projetoHackathon" target="_blank" rel="external">repositório público no GitHub</a>!</p>
+    <h2>Links Internos</h2>
+    <p>Esta é a primeira página do site. Você também pode visitar a minha <a href="pg002.html" target="self" rel="next">segunda página</a>! E até mesmo para a <a href="noticias/pg003.html" target="_self" rel="next">terceira</a>!</p>
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="livro/intervalos.pdf" target="_blank" rel="next">Abrir o livro em PDF</a></li>
+        <li><a href="livro/intervalos.pdf" download="livro/intervalos.pdf" type="application/pdf">Baixar o livro em PDF</a></li> <!-- application vem da lista: iana.org/assignments/mediatypes -->
+        <li><a href="livro/intervalos.zip" download="livro/intervalos.zip" type="application/zip">Baixar livro em ZIP</a></li>
+    </ul>
+</body>
+</html>
