@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -24,11 +25,28 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+            border-collapse: collapse;
         }
 
         thead, tfoot {
             background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd){ /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){  /* 2n */
+            background-color: lightgray;
         }
 
         td.num {
@@ -61,7 +79,7 @@
                 <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
-        </tfoot>
+        </tfoot> 
         <tbody>
             <tr>
                 <td>São Paulo</td>
